@@ -1,0 +1,36 @@
+<header id="header" class="header" role="banner" aria-label="Site header">
+ {#  <nav class="secondary-nav nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <div class="col-4"><i class="fas fa-map-marker-alt"></i> 49 Street, Los Angeles</div>
+            <div class="col-4">(222) 400-6301</div>
+            <div class="col-4">contact@etalon.com</div>
+          </div>
+          <div class="col-4">
+          </div>
+        </div>
+      </div>
+    </nav> #}
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="{{ logo }}" alt="logo" /></a>
+      <div id="showMenu" class="d-block d-lg-none">
+        <div class="menu px-4">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="d-none d-lg-block">
+        {{ page.primary_menu }}
+      </div>
+
+      <div class="menu-wrap d-block d-lg-none">
+        <div class="icon-list">
+          {{ page.primary_menu }}
+        <div>
+      </div>
+    </div>
+  </nav>
+</header>

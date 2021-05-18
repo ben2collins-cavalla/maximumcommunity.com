@@ -1,0 +1,10 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      src/css/style.css : {}
+      src/css/fontawesome.min.css : {}
+  js:
+    src/js/script.js: {}
+  dependencies:
+    - core/jquery

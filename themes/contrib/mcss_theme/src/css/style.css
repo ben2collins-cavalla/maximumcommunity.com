@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+
+:root {
+    --brand-yellow:#fbb958;
+}
+
+#accordion_bundle{
+    background: none;
+}
+
+.accordion .card {
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.accordion  .btn{
+    background:none ;
+    color: black;
+}
+
+.accordion .btn:hover,
+.accordion .btn:focus
+.accordion .btn:active {
+    background:none;
+    color: var(--brand-yellow);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    background:var(--brand-yellow);
+    padding: 10.6719px 14.2292px;
+    border-radius: 1px;
+    border:none;
+}
+
+.btn:hover,
+.btn:focus
+.btn:active {
+    background: var(--brand-yellow);
+    border:none;
+}
+
+
+.call_to_action_bundle .btn{
+    margin-bottom: 1rem;
+}
+
+.call_to_action_bundle .lead{
+    color: var(--white);
+}
+
+.call_to_action_bundle .logo {
+    max-width: 200px;
+}
+
+#card_bundle .card{
+    padding: 1rem;
+}
+
+#content{
+    padding-top:5rem;
+}
+
+@media only screen and (max-width:767px){
+    .featurette_bundle .circular_image img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1500px){
+    .featurette_bundle .circular_image img {
+        height: 350px !important;
+        width: 350px !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+
+    .featurette_bundle .lead{
+        word-break: break-all;
+    }
+}
+footer .footer-menus{
+    background: var(--black) !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Playfair Display', serif;
+}
+
+header{
+    box-shadow: 1px 0 0 #f5f5f5;
+    background: var(--white);
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3);
+}
+
+header .navbar-brand img{
+    width: 125px;
+    object-fit: contain;
+}
+
+header .nav-link{
+    font-family: 'Playfair Display', serif;
+    color: var(--black);
+}
+
+header .navbar-toggler{
+    border: 1px solid var(--brand-yellow);
+}
+
+.menu-wrap{
+    background: var(--white);
+    -webkit-transform: translate3d(-150%,0,0);
+    transform: translate3d(-150%,0,0);
+    left: 0;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,.3);
+
+}
+
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+    color: var(--yellow);
+}
+
+.menu-wrap li {
+    border-top: 0.0625rem solid #dfe1e2;
+    padding-left: 1.5rem;
+}
+
+.menu-wrap li:last-child {
+    border-bottom: 0.0625rem solid #dfe1e2 !important;
+}
+
+.navbar-nav .is-active{
+    color: var(--yellow);
+}
+
+.page-footer .footer-copyright {
+    background: #1d2124;
+}
+
+
+
+#showMenu {
+    z-index: 9999;
+    width: 3rem;
+    height: 54px;
+    background: none;
+    float: left;
+}
+
+#showMenu .menu {
+    outline: 0;
+    width: 35px;
+    height: 42px;
+}
+
+#showMenu span {
+    height: 1px;
+    width: 2rem;
+    background: var(--brand-yellow) !important;
+}
+
+#showMenu span:nth-child(1) {
+    top: 11px;
+}
+
+#showMenu span:nth-child(2) {
+    top: 21px;
+}
+
+#showMenu span:nth-child(3) {
+    top: 31px;
+}
+
+.testimonial_bundle{
+    padding: 1rem;
+}
+
+.testimonials_bundle{
+    margin: 1.5rem 0;
+}
+
+.testimonials_bundle .header_text{
+    margin-bottom: 1rem;
+}
+
+.testimonials_bundle .col-12::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f10d";
+    font-size: 6rem;
+    z-index: 1;
+    color: var(--brand-yellow);
+    margin-left: -.5rem;
+    margin-top: -3rem;
+}
+
+.testimonial_bundle .quote {
+    border: none;
+    position: relative;
+    z-index: 3;
+}
+
+.webform_bundle .webform{
+    max-width: 1024px !important;
+}
+
+/* .webform_bundle #edit-resume-upload{
+    width: auto;
+} */
+
+.webform_bundle .js-form-item{
+    margin-bottom: 1.25rem;
+}
+
+/******
+Contact Form Bundle
+*****/
+
+.webform_bundle {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 25px;
+    max-height: 600px;
+/*     max-width: 1024px;
+ */    margin: auto;
+}
+
+  .webform_bundle .webform_section,
+  .webform_bundle .contactInfo_section {
+    vertical-align: middle;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .webform_bundle .webform_section,
+    .webform_bundle .contactInfo_section {
+      width: 100% !important;
+      display: block !important;
+    }
+  }
+
+  .webform_bundle  input,
+  .webform_bundle  textarea,
+  #edit-resume-upload,
+  .webform_bundle  select{
+    border: 1px solid #dedcdc;
+    outline: 0;
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }
+
+  .webform_bundle input:focus,
+  .webform_bundle input:active,
+  .webform_bundle textarea:focus, textarea:active {
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+    outline: none;
+    border-left: 3px solid var(--yellow);
+    padding-left: 12px;
+}
+
+
+
+  .webform_bundle iframe {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .webform_bundle iframe {
+      display:none;
+    }
+  }
+
+  .webform_bundle .contactInfo {
+    width: 100%;
+    padding: .9rem;
+    margin: auto;
+    background: #393939;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width:350px;
+  }
+
+  @media screen and (max-width: 767px) {
+  .webform_bundle  .contactInfo {
+       transform:none;
+       position: unset;
+       max-width: 100%;
+    }
+  }
+
+  .webform_bundle .contactInfo .btn {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #fff
+  }
+
+.webform_bundle .webform{
+      max-width:90%;
+      margin:auto;
+}
+
+.webform-button--submit:active{
+      border: 3px solid var(--yellow);
+      background: var(--white);
+}
+.webform-button--submit {
+    background: var(--yellow);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 1.25rem !important;
+    height: auto;
+    max-width: fit-content
+}
+
+.webform_bundle  #edit-resume-upload{
+      background: var(--white);
+}
+
+.webform_bundle .form-checkbox{
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+
+.webform_bundle  .js-form-type-checkbox input{
+    display: inline-block;
+}
+
+  .webform_bundle  label{
+    margin-bottom:1rem;
+}
